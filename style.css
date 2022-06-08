@@ -1,3 +1,51 @@
+/* Universal style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 16px;
 }
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img,
+.image-container video {
+    display: block;
+    width: 100%;
+}
+
+/* Flex Containers for main and side content */
+.container-flex-content {
+    display: flex;
+    padding: 0 1.5rem;
+}
+
+.container-flex-content .side-content {
+    display: flex;
+    padding: 1rem 0 1rem 1rem;
+}
+
+/* side content image */
