@@ -119,3 +119,66 @@ li {
         width: 100%;
     }
 }
+
+/* Navbar and Header */
+
+nav {
+    display: none;
+}
+
+header {
+    padding: 1rem 1.5rem;
+}
+
+header .desktop {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    flex-grow: 1;
+    display: flex;
+    align-items center;
+}
+
+header .logo img {
+    margin-right: 0.5rem;
+}
+
+header li {
+    display: inline;
+    padding-right: 1rem;
+}
+
+header li:last-child {
+    padding-right: 0;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 550px) {
+header .desktop {
+    display: none;
+}
+
+header .mobile {
+    display: block;
+    width: 100%;
+}
+
+header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    justify-content: center;
+}
+
+.logo span {
+    display: none;
+}
+}
